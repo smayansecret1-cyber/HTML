@@ -1,0 +1,11 @@
+function findingSum() {
+  let sum = 0;
+
+  for (let i = 0; i < arguments.length; i++) {
+    sum = sum + arguments[i];
+  }
+
+  return sum;
+}
+
+console.log(findingSum(40, 60, 607, 54, 756, 456, 708));
