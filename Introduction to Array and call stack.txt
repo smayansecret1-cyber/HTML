@@ -1,0 +1,24 @@
+Introduction to Array and call stack
+
+var cars=[
+"Arabian_Aka",
+"strike7777777777",
+"black_hunter9999",
+"A_Pvp"
+]
+console.log(cars[2])
+👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻
+black_hunter9999
+
+
+var cars=[
+"Arabian_Aka",
+"strike7777777777",
+"black_hunter9999",
+"A_Pvp"
+]
+console.log(cars.pop())
+console.log(cars)
+👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻
+A_Pvp
+[ 'Arabian_Aka', 'strike7777777777', 'black_hunter9999' ]
