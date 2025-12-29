@@ -1,0 +1,20 @@
+homework object data structure and array 
+Code
+
+var cars=[
+"Dominos",
+"Pizza Hut",
+"Papa Johns",
+"Johns Pizzariea"
+]
+console.log(cars.pop())
+console.log(cars.join())
+console.log(cars[0])
+
+
+Output
+
+Johns Pizzariea
+Dominos,Pizza Hut,Papa Johns
+Dominos
+
