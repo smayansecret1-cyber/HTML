@@ -1,0 +1,19 @@
+Accessing values with HTML DOM Structure
+
+Code
+
+var CodingingLaunguages=[
+"Javascript",
+"Python",
+"HTML",
+"Scratch"
+]
+console.log(CodingingLaunguages.pop())
+console.log(CodingingLaunguages.join())
+console.log(CodingingLaunguages[0])
+
+Output
+
+Scratch
+Javascript,Python,HTML
+Javascript
