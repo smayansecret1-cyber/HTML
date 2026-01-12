@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: darkturquoise;
+background:url("https://i.pinimg.com/originals/c1/5c/ba/c15cbae66a8a930a1cb292aaf60bb815.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
+color:blueviolet
+}
+</style>
+</head>
+<body>
+<h1 id="error"></h1>
+<script>
+try {
+Alert("welcome guest");
+}
+catch(err) {
+document.getElementById("error").innerHTML=err.message
+}
+</script>
+</body>
+</html>

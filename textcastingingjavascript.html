@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: darkturquoise;
+background:url("https://i.pinimg.com/originals/c1/5c/ba/c15cbae66a8a930a1cb292aaf60bb815.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
+color:blueviolet
+}
+</style>
+</head>
+<body>
+<p id="normal result"></p>
+<p id="string result"></p>
+<script>
+let x= parseInt(prompt("Enter a value:"));
+let y = parseInt(prompt("Enter a value:"));
+let answer=x+y
+document.getElementById("normal result").innerHTML= answer
+document.getElementById("string result").innerHTML=String(x) + String(y)
+</script>
+</body>
+</html>
