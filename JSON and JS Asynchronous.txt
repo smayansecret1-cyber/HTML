@@ -1,0 +1,92 @@
+JSON and JS Asynchronous
+
+call back function & Async
+
+code
+
+function delayedPrint(callback) {
+
+setTimeout(() => {
+
+for (let i = 1; i <= 10; i++) {
+
+console.log(i);
+
+}
+
+callback("Finished printing after 5 sec");
+
+}, 5000);
+
+}
+
+console.log("hello world");
+
+delayedPrint((message) => {
+
+console.log(message);
+
+});
+
+output
+
+hello world
+undefined
+VM2186:7 1
+VM2186:7 2
+VM2186:7 3
+VM2186:7 4
+VM2186:7 5
+VM2186:7 6
+VM2186:7 7
+VM2186:7 8
+VM2186:7 9
+VM2186:7 10
+VM2186:21 Finished printing after 5 sec
+
+Promise
+
+Code
+
+function delayedPrint() {
+
+return new Promise((resolve) => {
+
+setTimeout(() => {
+
+for (let i = 1; i <= 10; i++) {
+
+console.log(i);
+
+}
+
+resolve("Finished printing after 5 sec");
+
+}, 5000);
+
+});
+
+}
+
+console.log("hello world");
+
+delayedPrint().then((message) => {
+
+console.log(message);
+
+});
+
+Output
+
+
+VM2194:9 1
+VM2194:9 2
+VM2194:9 3
+VM2194:9 4
+VM2194:9 5
+VM2194:9 6
+VM2194:9 7
+VM2194:9 8
+VM2194:9 9
+VM2194:9 10
+VM2194:25 Finished printing after 5 sec
