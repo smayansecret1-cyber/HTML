@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: darkturquoise;
+background:url("https://www.pixelstalk.net/wp-content/uploads/images8/Above-Clouds-Free-Download-Anime-Backgrounds-Computer.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
+
+font-family: 'Arial', sans-serif;
+
+
+color: coral;
+}
+
+input {
+background:url("https://static.vecteezy.com/system/resources/previews/024/977/694/large_2x/beautiful-illustration-of-an-anime-style-background-with-pastel-colors-ai-generated-photo.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
+
+padding: 20px;
+
+border-radius: 5px;
+
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+max-width: 400px;
+
+margin:auto
+;
+
+button{
+background:url("https://static.vecteezy.com/system/resources/previews/024/977/694/large_2x/beautiful-illustration-of-an-anime-style-background-with-pastel-colors-ai-generated-photo.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
+
+padding: 20px;
+
+border-radius: 5px;
+
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+max-width: 400px;
+
+margin:auto
+;
+}
+}
+</style>
+</head>
+<body>
+<p>Enter a number and click OK:</p>
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+<p id="result"></p>
+<script>
+function myFunction() {
+var inpObj = document.getElementById("id1");
+if (!inpObj.checkValidity()) {
+document.getElementById("result").innerHTML = inpObj.validationMessage;
+} else {
+document.getElementById("result").innerHTML = "Input OK";
+}
+}
+</script>
+</body>
+</html>
