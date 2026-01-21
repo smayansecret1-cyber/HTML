@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+function validateForm() {
+var x = document.forms["myForm"]["fname"].value;
+var y = Number(document.forms["myForm"]["age"].value);
+if (x == "") {
+alert("Name must be filled out");
+return false;
+}
+if (y == "") {
+alert("Your age is required");
+return false;
+}
+if (y < 18) {
+alert("You have to be above 18 to login");
+return false;
+}
+alert("Hello " + x + "\nYour form has been successfully submitted!");
+return true;
+}
+</script>
+<style>
+body {
+background-color: darkturquoise;
+background:url("https://www.pixelstalk.net/wp-content/uploads/images8/Above-Clouds-Free-Download-Anime-Backgrounds-Computer.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
+font-family: 'Arial', sans-serif;
+color: coral;
+}
+form {
+background:url("https://tse1.mm.bing.net/th/id/OIP.dnUi_JS9YzKZ7InohQDzUgHaDj?pid=Api&P=0&h=180");
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+max-width: 525px;
+margin:auto
+;
+}
+</style>
+</head>
+<body>
+<div class="container mt-4">
+<form name="myForm" onsubmit="validateForm()">
+Name: <input type="text" name="fname">
+Age: <input type="number" name="age">
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
