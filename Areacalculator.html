@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: darkturquoise;
+background:url("https://www.pixelstalk.net/wp-content/uploads/images8/Above-Clouds-Free-Download-Anime-Backgrounds-Computer.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
+
+font-family: 'Arial', sans-serif;
+
+
+color: coral;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>
+Area calculator
+</h1>
+<script>
+var choice =prompt("chose a shape to calculate the area of the options are:\n1.Square \n2.rectengle \n3.tringle \n(write only the number of the shape for ex-rectengle=2)");
+var area;
+if (choice==="1") {
+var side= parseFloat(prompt("enter the length of the square"));
+area= side*side;
+alert ("the area of square is: " + area);
+} else if (choice==="2") {
+var length=parseFloat(prompt("enter the length of the rectengle"));
+var width =parseFloat(prompt("enter the breadth of the rectengle"));
+area = length*width;
+alert("The area of the rectangle is: " + area);
+} else if (choice==="3") {
+var base = parseFloat(prompt("enter the base of the tringle"));
+var height= parseFloat(prompt("enter the height of the tringle"));
+area= 0.5 * base * height;
+alert ("the area of tringle is: " + area)
+}
+</script>
+</center>
+</body>
+</html>
