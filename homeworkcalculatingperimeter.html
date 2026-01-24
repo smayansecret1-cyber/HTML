@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: darkturquoise;
+background:url("https://www.pixelstalk.net/wp-content/uploads/images8/Above-Clouds-Free-Download-Anime-Backgrounds-Computer.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
+
+font-family: 'Arial', sans-serif;
+
+
+color: coral;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>
+Perimeter calculator
+</h1>
+<script>
+var choice =prompt("chose a shape to calculate the Perimeter of the options are:\n1.Square \n2.rectengle \n3.tringle \n(write only the number of the shape for ex-rectengle=2)");
+var area;
+if (choice==="1") {
+var side= parseFloat(prompt("enter the length of the square"));
+Perimmeter= side*4;
+alert ("the perimeter of square is: " + Perimmeter);
+} else if (choice==="2") {
+var length = parseFloat(prompt("enter the length of the rectangle"));
+var width = parseFloat(prompt("enter the breadth of the rectangle"));
+var Perimeter = 2 * (length + width);
+alert("The perimeter of the rectangle is: " + Perimeter);
+} else if (choice==="3") {
+var a = parseFloat(prompt("enter the length of side a of the tringle"));
+var b= parseFloat(prompt("enter the length of side b of the tringle"));
+var c=parseFloat(prompt("enter the length of side c of the tringle"))
+Perimmeter= a+b+c;
+alert ("the perimeter of tringle is: " + Perimmeter)
+}
+</script>
+</center>
+</body>
+</html>
