@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color:cyan;
+}
+
+button {
+background-color: #3498db;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+width: 550px;
+transition: background-color 0.3s;
+}
+</style>
+</head>
+<body>
+<center>
+<button onclick="change_color()">Click Me</button>
+<script>
+var colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+var i = 0;
+function change_color() {
+document.body.style.backgroundColor = colors[i];
+i = i + 1;
+if (i === colors.length) {
+i = 0;
+}
+}
+</script>
+</center>
+</body>
+</html>
