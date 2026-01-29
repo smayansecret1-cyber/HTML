@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>To Do List</title>
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif;
+
+background-color: #ffffff;
+
+color: #000000;
+
+margin: 0;
+
+padding: 20px;
+
+transition: background-color 0.3s, color 0.3s;
+
+}
+
+.dark-mode {
+
+background-color: #121212;
+
+color: #f0f0f0;
+
+}
+
+</style>
+
+<body>
+
+<button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+<br>
+
+<br>
+
+<form id="myForm">
+
+<input id="myInput" type="text" />
+
+<button type="submit">Add</button>
+
+</form>
+
+
+<h3>To Do List</h3>
+
+<ul id="myItem"></ul>
+
+<script>
+const MyForm= document.getElementById("MyForm");
+const MyInput= document.getElementById("MyInput");
+const MyItem= document.getElementById("MyItem");
+
+myForm.addEventListener("sumbit", function (event){
+event.preventDefault();
+const trimmedInput = myInput.value.trim();
+if (trimmedInput==="") {
+alert ("Please enter a non-empty item.");
+myInput.value="";
+myInput.focus();
+return;
+}
+});
+function createItem(inputText) {
+const li = document.createElement("li")
+li.textContent = "Delete";
+const delBtn = document.createElement("button")
+}
+</script>
