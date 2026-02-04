@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#MyDateDisplay {
+font-size: 56px;
+color: white;
+padding: 25px 35px;
+font-family: 'Poppins', Arial, sans-serif;
+display: inline-block;
+border-radius: 15px;
+letter-spacing: 2px;
+text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+
+background: linear-gradient(rgba(0, 18, 97, 0.55), rgba(0, 0, 0, 0.6)),
+url("https://tse1.mm.bing.net/th/id/OIP.dnUi_JS9YzKZ7InohQDzUgHaDj?pid=Api&P=0&h=180");
+
+background-size: cover;
+background-position: center;
+}
+
+
+body {
+background: linear-gradient(rgba(0, 18, 97, 0.55), rgba(0, 0, 0, 0.6)),
+url("https://www.pixelstalk.net/wp-content/uploads/images8/Above-Clouds-Free-Download-Anime-Backgrounds-Computer.jpg");
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+font-family: 'Poppins', Arial, sans-serif;
+color: cyan;
+margin: 0;
+padding: 20px;
+}
+
+h3 {
+font-size: 60px;
+color: white;
+text-align: center;
+letter-spacing: 3px;
+text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+margin-bottom: 20px;
+
+background: linear-gradient(rgba(0, 18, 97, 0.55), rgba(0, 0, 0, 0.6));
+padding: 15px 25px;
+display: inline-block;
+border-radius: 15px;
+box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+</style>
+</head>
+<body onload="showDate()">
+<center>
+<h3>Day,Day,Month,Year</h3>
+<br><br><br>
+<div id="MyDateDisplay"></div>
+</center>
+<script>
+function showDate() {
+var d = new Date();
+var date = d.getDate();
+var month = d.getMonth() + 1;   
+var year = d.getFullYear();
+var day = d.getDay();      
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("MyDateDisplay").innerHTML =
+days[day] + " | " + date + "/" + month + "/" + year;
+}
+</script>
+</body>
+</html>
