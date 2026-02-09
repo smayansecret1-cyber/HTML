@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+
+text-align: center;
+
+font-family: Helvetica, sans-serif;
+
+margin-top: 50px; /* Just to give some space from the top */
+
+background-color: #f8f8f8; /* Light background */
+
+background: linear-gradient(rgba(0, 18, 97, 0.55), rgba(0, 0, 0, 0.6)),
+url("https://www.pixelstalk.net/wp-content/uploads/images8/Above-Clouds-Free-Download-Anime-Backgrounds-Computer.jpg");
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+font-family: 'Poppins', Arial, sans-serif;
+color: cyan;
+margin: 0;
+padding: 20px;
+}
+
+#dice {
+
+
+
+/* Optional: Add a border or background to make the dice area clear */
+
+border: 2px solid #ccc;
+
+display: inline-block; /* Helps with sizing and centering */
+
+padding: 20px;
+
+border-radius: 10px;
+
+background-color: #ffffff; /* White background for the dice */
+
+box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+
+transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+cursor: pointer; /* Indicate it's clickable */
+
+user-select: none; /* Prevent text selection */
+
+-webkit-user-select: none; /* For Webkit browsers */
+
+-moz-user-select: none; /* For Mozilla Firefox */
+
+-ms-user-select: none; /* For Internet Explorer/Edge */
+font-size: 60px;
+color: white;
+text-align: center;
+letter-spacing: 3px;
+text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+margin-bottom: 20px;
+
+background: linear-gradient(rgba(0, 18, 97, 0.55), rgba(0, 0, 0, 0.6));
+padding: 15px 25px;
+display: inline-block;
+border-radius: 15px;
+box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+
+}
+
+#dice:hover {
+
+background-color: #e0e0e0; /* Visual feedback on hover */
+
+}
+
+</style>
+</head>
+<body>
+<div id="dice" onclick="stopstart()">
+&#x280;
+</div>
+<script>
+const diceElement = document.getElementById("dice")
+const dices= ['<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ad6e5b81-f039-42fa-a02a-23688d84f2bc/dfayl81-f4a70350-60be-495e-b940-42b20d5d9a8a.png/v1/fill/w_755,h_760,q_80,strp/gojo_pfp_by_soda_west_by_sodawest_dfayl81-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzYwIiwicGF0aCI6IlwvZlwvYWQ2ZTViODEtZjAzOS00MmZhLWEwMmEtMjM2ODhkODRmMmJjXC9kZmF5bDgxLWY0YTcwMzUwLTYwYmUtNDk1ZS1iOTQwLTQyYjIwZDVkOWE4YS5wbmciLCJ3aWR0aCI6Ijw9NzU1In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.yaGDq3BGb-v621Gv7TYTwI8Y-uYIz9mgo14LJ-_hMjM" width="100px" height="auto" >','<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3-TsYC4Hml0k1_geACRPUjcKnKV3qfa4lxYAQ-baOrrj4w6qJTTjXRQhDiyKA9oUjMU7uClW_r-wJGCNwkprauRKPBbcqmfvSoDp_LNDeEzBh3dgEBTHAU7nCVEQujd_C5R3vAaUuTDHxt2OXrqqsfoxqn2P3HXqkzE9rET57jA1UkLVsGUbFohSsnCly/s16000-rw/Sukuna-pfp-15.jpg" width="100px" height="auto">','<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjKZ2lhOT_RT4vC7nW47WpbeQHcEGrjd97JdvT8Zbjo6_l9sX45KQMpbZjOML5MzC9a1JJdK_vFUAEIbNHtZi-gPI9CtDwmBYWW7ENoyV7KiBfT-o8dwsHcuMaA_eyQOcXbimMlioICmwcfEbzjU_nEiQce7uQYnrJLgURIRcNkc3JWDTg3pndd7ZUQ1cQ/s16000-d/yuji-itadori-pfp-28.png" width="100px" height="auto">' , '<img src="https://cdn.pfps.gg/pfps/6117-toge-inumaki.png"width="100px" height="auto" >', 
+'<img src="https://www.dpzone.in/wp-content/uploads/3/Megumi-PFP-40.webp" width="100px" height="auto"  >', '<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv86fSUWQVaZWUxKEM_xYOsDC__LlHjt8yAflv5GC0Tl2uNuWiZOa7mpJWJdjb-YSzwRIegcTCwoUGi9dBpP_Rm1IOJo_fgpQSV0KS3aUGdd72YU6sAIvd3fygQF3jZD0A3xukSmJMEaFOj6Q7tByJjHgHaOODqbtloA5hggoWEkYh9LsDgTohBULYcz4Y/s16000-d/nobara-pfp-7.png"width="100px" height="auto">'
+]
+let timerId;
+let isRolling= false;
+function changeDiceFace() {
+const random = Math.floor(Math.random()* dices.length);
+diceElement.innerHTML =dices[random]
+}
+
+function stopstart() {
+if (!isRolling) { // If it's currently NOT rolling (i.e., stopped)
+isRolling = true;
+               // Start changing the dice emoji every 0.1 seconds (100ms)
+timerId = setInterval(changeDiceFace, 100);
+           } else { // If it's currently rolling
+               clearInterval(timerId); // Stop the interval
+               isRolling = false;
+           }
+       }
+
+</script>
+</body>
+</html>
