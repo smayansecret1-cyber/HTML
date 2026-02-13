@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spice Symphony</title>
+<style>
+body{
+margin:0;
+padding:0;
+padding-top:70px;
+font-family:'Poppins',Arial,sans-serif;
+text-align:center;
+color:cyan;
+background:linear-gradient(rgba(0,18,97,0.55),rgba(0,0,0,0.6)),url("https://www.pixelstalk.net/wp-content/uploads/images8/Above-Clouds-Free-Download-Anime-Backgrounds-Computer.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+.topnav{
+overflow:hidden;
+background-color:#333;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+}
+.topnav a{
+float:left;
+color:#1affa3;
+text-align:center;
+padding:14px 20px;
+text-decoration:none;
+font-size:17px;
+transition:0.3s ease;
+}
+.topnav a:hover{
+background-color:#ddd;
+color:black;
+}
+.topnav a.active{
+background-color:#ffe066;
+color:black;
+}
+section,div[id]{
+padding:80px 20px;
+}
+.home-box,.about-box,.offer-box,.contact-box{
+max-width:900px;
+margin:auto;
+padding:30px;
+background:rgba(0,0,0,0.6);
+border-radius:20px;
+box-shadow:0px 6px 20px rgba(0,0,0,0.6);
+}
+.home-box h1{
+color:white;
+margin-bottom:20px;
+font-size:48px;
+}
+.home-box p,.about-box p{
+font-size:18px;
+line-height:1.6;
+}
+.service-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+.service-card{
+background:rgba(0,0,0,0.6);
+padding:20px;
+width:250px;
+border-radius:15px;
+box-shadow:0px 4px 15px rgba(0,0,0,0.5);
+transition:0.3s ease;
+}
+.service-card:hover{
+transform:scale(1.05);
+}
+.service-card h3{
+color:white;
+margin-bottom:10px;
+}
+.offer-box{
+border:2px solid #ffe066;
+background:rgba(255,224,102,0.15);
+}
+.offer-box ul{
+list-style:none;
+padding:0;
+}
+.offer-box li{
+margin:15px 0;
+font-size:18px;
+}
+.contact-box input,.contact-box textarea{
+width:90%;
+padding:10px;
+margin:10px 0;
+border-radius:8px;
+border:none;
+}
+button{
+background-color:#1affa3;
+border:none;
+padding:10px 20px;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+button:hover{
+background-color:#ffe066;
+color:black;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a class="active" href="#home">🏠 Home</a>
+<a href="#about">About_Us</a>
+<a href="#gallery">Gallery</a>
+<a href="#services">Services</a>
+<a href="#offers">Offer</a>
+<a href="#contact">Contact_Us</a>
+</div>
+
+<div id="home">
+<div class="home-box">
+<h1>Spice Symphony</h1>
+<p>Welcome to Spice Symphony, where every dish tells a story of flavor, tradition, and passion. We bring together authentic Indian spices and modern cooking techniques to create unforgettable meals that satisfy both the heart and the taste buds. From the rich aroma of freshly ground spices to the vibrant presentation of every plate, we carefully craft each dish to deliver a truly memorable dining experience.<br><br>At Spice Symphony, food is more than just nourishment — it is an emotion that connects people. Whether you are enjoying a cozy dinner with family, celebrating a special occasion with friends, or simply treating yourself to something delicious, our warm ambiance and friendly service make every visit special.<br><br>✨ Fresh Ingredients sourced daily for maximum flavor<br><br>✨ Authentic Recipes inspired by tradition<br><br>✨ Unmatched Taste created with passion and creativity<br><br>Step inside and let your senses explore a symphony of flavors that feel like home, yet taste like something extraordinary.</p>
+</div>
+</div>
+
+<div id="about">
+<div class="about-box">
+<h2>About Us</h2>
+<p>Spice Symphony was founded with one simple goal — to serve food that connects people. Our chefs carefully select the finest ingredients and blend traditional Indian flavors with a contemporary twist.<br><br>We believe dining is not just about eating; it’s about creating memories with family and friends. With warm hospitality and rich flavors, we aim to make every visit special.</p>
+</div>
+</div>
+
+<div id="services">
+<h2>Our Services</h2>
+<div class="service-container">
+<div class="service-card"><h3>Dine-In</h3><p>Enjoy a cozy and elegant dining atmosphere with exceptional service.</p></div>
+<div class="service-card"><h3>Online Ordering</h3><p>Order your favorite meals quickly and easily from home.</p></div>
+<div class="service-card"><h3>Catering</h3><p>We cater birthdays, weddings, and special events with premium menus.</p></div>
+<div class="service-card"><h3>Home Delivery</h3><p>Fast and safe delivery straight to your doorstep.</p></div>
+</div>
+</div>
+
+<div id="offers">
+<div class="offer-box">
+<h2>Special Offers</h2>
+<ul>
+<li>🔥 Weekday Lunch Special – 20% OFF</li>
+<li>🔥 Buy 1 Dessert, Get 1 Free (Weekends)</li>
+<li>🔥 Free Drink on Orders Above ₹999</li>
+</ul>
+</div>
+</div>
+
+<div id="contact">
+<div class="contact-box">
+<h2>Contact Us</h2>
+<p>📍 MG Road, Your City<br>📞 +91 98765 43210<br>📧 spicesymphony@email.com</p>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="4" placeholder="Your Message"></textarea><br>
+<button>Send Message</button>
+</div>
+</div>
+
+</body>
+</html>
